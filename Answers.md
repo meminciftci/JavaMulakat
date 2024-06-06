@@ -35,7 +35,30 @@ Web Uygulaması geliştirme üzerine çok fazla bir deneyimim olmadığı için 
 
 ## Görev 4
 
+Öncelikle 500 elemana sahip ve her elemanı 1 ve 10.000 arasında değer alan bir liste oluşturalım. Yeni oluşturacağımız başka bir listede ise sırasıyla 0. endeksten başlayarak ilk oluşturulan listedeki elemanları ekleyelim. Her eklemede minimum ve maksimum değerler hesaplanmalı ve bu hesaplara göre normalizasyon yapılmalı. Bu normalizasyon değerleri ise başka bir listede tutulmalı ki çıktı olarak verebilelim. 
+	
+Algoritmanın implementasyonuna “java_question2.java” dosyasından ulaşabilirsiniz. 
+
+
 ## Görev 5
+
+1. SQL Sorgusu ile Her Departmandaki Çalışan Sayısını Hesaplama
+
+Aşağıda, her departmandaki çalışan sayısını hesaplayan ve sonucu departman adıyla birlikte listeleyen bir SQL sorgusu bulunmaktadır:
+
+```sql
+SELECT Dept.Name AS DepartmentName, COUNT(Emp.Id) AS EmployeeCount
+FROM Dept
+LEFT JOIN Emp ON Dept.Id = Emp.DeptId
+GROUP BY Dept.Name;
+```
+
+Dept.Id ve Emp.Id’nin aynı olduğu satırları left join ile birleştiriyoruz ve sonuç olarak elde ettiğimiz tabloyu Dept.Name’e göre grupluyoruz. Gruplamadan sonra ise DepartmentName ve EmployeeCount olmak üzere iki sütun ve 5 satır büyüklüğünde bir çıktı vereceğiz.
+
+2.	Departman Adı ile Birlikte Sorgu: Yukarıdaki SQL sorgusu departman adını içermektedir (DeparmentName).
+
+3.	Satır Sayısı: 5 satır listelenecektir. Elimizde 5 adet farklı departman olduğu için her bir departman bilgileri için bir satırımız olacağını düşünür isek 5 satır beklenilen çıktı olacaktır.
+
 
 ## Soru 1
 Uygulama geliştirirken Java kullanma fırsatım hiç olmadı. Ancak Python üzerinden Django framework’ünü kullanarak bir web uygulaması geliştirdim. MySql veri tabanını kullanarak yaptığım bir projemdi. Ancak localimizde gösterdiğim için uygulama güvenliği adına bir adım atmadım. Daha çok veri tabanın kullanabildiğimizi gösterdiğimiz bir proje idi.
