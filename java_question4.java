@@ -52,8 +52,7 @@ public class java_question4 {
             System.out.println("Normalizasyon : " + normalizedData);
             System.out.println("--------------------------------------------------");
 
-            // Örnek çıktıda olduğu gibi sadece 3 veri için detaylı sonuç gösterme
-            if (i == 6) {
+            if (i == 20) {
                 break;
             }
         }
