@@ -107,11 +107,12 @@ Güvenlik önlemlerinden bahsetmemiz gerekir ise öncelikle kendi projemizde kul
 
 ## Soru 5
 
-Cevap:  +-------+ 
-        | cust_not_123_total | 
-        +-------+ 
-        | 85 | 
-        +-------+
+Cevap:  
++-------+  
+| cust_not_123_total |  
++-------+  
+| 85 |  
++-------+
 
 İlk sorgu sonucu bize toplamda 100 adet sipariş olduğunu gösteriyor. İkinci sorgu ise toplamda kaç adet siparişin müşteri kimlik numarasının 123’e eşit olduğunu gösteriyor ki bu değer de 15’e eşit. Bizden istenen ise kimlik numarası 123’e eşit olmayan siparişlerin toplam sayısı. Bu değer ise toplam 100 – 15 = 85’e denk geliyor.
 
